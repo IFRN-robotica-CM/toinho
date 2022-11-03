@@ -29,11 +29,7 @@ void setup(){
 
 void loop(){ 
 
-  if(true)
-    seguirLinha();
-  else
-    desviarObstaculo();
-
+  
 }
 
 void seguirLinha(){
@@ -60,5 +56,20 @@ void seguirLinha(){
 }
 
 void desviarObstaculo(){
+
+  robo.acionarMotores(-50,50);
+  delay(4000);
+  robo.acionarMotores(50,50);
+  delay(4000);
+  robo.acionarMotores(50,-50);
+  delay(4000);
+  robo.acionarMotores(50,50);
+  delay(4000);
+  robo.acionarMotores(50,-50);
+  delay(4000);
+  robo.acionarMotores(50,50);
+  delay(4000);
+  robo.acionarMotores(-50,50);
+  delay(4000);
   
 }
